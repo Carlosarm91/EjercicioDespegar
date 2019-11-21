@@ -12,9 +12,9 @@ public class BuscarVuelo_pageObjects extends PageObject {
 	String mes = "";
 	String dia = "";
 	String mes2 = "";
-	String dia2= "";
-	String value = "";
-	int menor = 0, valor = 0, mayor = 0, click=0;
+	String dia2 = "";
+	String value = "", value2 = "", value3 = "";
+	int menor = 999999999, valor = 0, mayor = 0, click = 0;
 	String txt_inicio = "//*[@id=\"incentive-login\"]/i[2]";
 	String txt_vuelos = "//div[@class='header-navigation -first']//li[2]";
 	String txt_ida = "//span[2]//label[1]//i[1]";
@@ -22,18 +22,6 @@ public class BuscarVuelo_pageObjects extends PageObject {
 	String txt_selectDestino = "/html/body/div[18]/div/div[1]/ul/li[1]";
 	String txt_calendario = "//div[@class='input-container sbox-bind-event-click-start-date']//input[@placeholder='Ida']";
 	String txt_calendario2 = "//input[@placeholder='Vuelta']";
-	String txt_11 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[1]";
-	String txt_12 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[2]";
-	String txt_01 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[3]";
-	String txt_02 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[4]";
-	String txt_03 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[5]";
-	String txt_04 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[6]";
-	String txt_05 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[7]";
-	String txt_06 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[8]";
-	String txt_07 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[9]";
-	String txt_08 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[10]";
-	String txt_09 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[11]";
-	String txt_10 = "/html[1]/body[1]/div[5]/div[1]/div[5]/div[12]";
 	String txt_dia = "/html[1]/body[1]/div[4]/div[1]/div[5]/div[";
 	String txt_dia2 = "/html[1]/body[1]/div[4]/div[1]/div[5]/div[";
 	String txt_menu = "/html[1]/body[1]/div[12]/div[1]/div[3]/div[1]/div[1]/div[3]/div[2]/div[3]/div[7]/div[1]/div[1]/div[1]/div[2]/input[1]";
@@ -87,70 +75,70 @@ public class BuscarVuelo_pageObjects extends PageObject {
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "01":
-			click=1;
+			click = 1;
 			find(By.xpath(txt_flecha)).click();
 			txt_dia += "3" + "]/div[4]/span[" + dia + "]";
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "02":
-			click=2;
-			for (int i=0;i<2;i++) {
+			click = 2;
+			for (int i = 0; i < 2; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia += "4" + "]/div[4]/span[" + dia + "]";
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "03":
-			click=3;
-			for (int i=0;i<3;i++) {
+			click = 3;
+			for (int i = 0; i < 3; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia += "5" + "]/div[4]/span[" + dia + "]";
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "04":
-			click=4;
-			for (int i=0;i<4;i++) {
+			click = 4;
+			for (int i = 0; i < 4; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia += "6" + "]/div[4]/span[" + dia + "]";
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "05":
-			click=5;
-			for (int i=0;i<5;i++) {
+			click = 5;
+			for (int i = 0; i < 5; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia += "7" + "]/div[4]/span[" + dia + "]";
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "06":
-			click=6;
-			for (int i=0;i<6;i++) {
+			click = 6;
+			for (int i = 0; i < 6; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia += "8" + "]/div[4]/span[" + dia + "]";
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "07":
-			click=7;
-			for (int i=0;i<7;i++) {
+			click = 7;
+			for (int i = 0; i < 7; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia += "9" + "]/div[4]/span[" + dia + "]";
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "08":
-			click=8;
-			for (int i=0;i<8;i++) {
+			click = 8;
+			for (int i = 0; i < 8; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia += "10" + "]/div[4]/span[" + dia + "]";
 			find(By.xpath(txt_dia)).click();
 			break;
 		case "09":
-			click=9;
-			for (int i=0;i<9;i++) {
+			click = 9;
+			for (int i = 0; i < 9; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia += "11" + "]/div[4]/span[" + dia + "]";
@@ -193,21 +181,22 @@ public class BuscarVuelo_pageObjects extends PageObject {
 	}
 
 	public void seguir() {
-		find(By.xpath(txt_seguir)).click();
+		if (find(By.xpath(txt_seguir)).isVisible())
+			find(By.xpath(txt_seguir)).click();
 	}
 
 	public void validar() {
-		value = find(By.xpath(txt_precio1)).getText();
-		if(value.isEmpty()){			
-				valor=0;
-				menor=0;
-			}else {				
+		if (find(By.xpath(txt_precio1)).isVisible())
+			value = find(By.xpath(txt_precio1)).getText();
+		if (value.isEmpty()) {
+			valor = 0;
+		} else {
 			value = value.substring(1, value.length());
 			value = value.replace(".", "");
 			valor = Integer.parseInt(value);
 			menor = valor;
 			System.out.println(valor);
-			}
+		}
 		while (find(By.xpath(txt_click)).isVisible()) {
 			value = find(By.xpath(txt_precio1)).getText();
 			if (value.isEmpty()) {
@@ -276,16 +265,16 @@ public class BuscarVuelo_pageObjects extends PageObject {
 
 	public void validarAlto() {
 		value = find(By.xpath(txt_precio1)).getText();
-		if(value.isEmpty()){			
-				valor=0;
-				mayor=0;
-			}else {				
+		if (value.isEmpty()) {
+			valor = 0;
+			mayor = 0;
+		} else {
 			value = value.substring(1, value.length());
 			value = value.replace(".", "");
 			valor = Integer.parseInt(value);
 			mayor = valor;
 			System.out.println(valor);
-			}
+		}
 		while (find(By.xpath(txt_click)).isVisible()) {
 			value = find(By.xpath(txt_precio1)).getText();
 			if (value.isEmpty()) {
@@ -347,14 +336,13 @@ public class BuscarVuelo_pageObjects extends PageObject {
 		}
 		System.out.println("El precio mayor entre las distintas opciones es: $" + mayor);
 	}
-	
+
 	public void idaVuelta() {
 		find(By.xpath(txt_IdaVuelta)).click();
 	}
 
 	public void fechaVuelta(String fechaVuelta) throws InterruptedException {
-		for (int i=0;i<click;i++) {
-			System.out.println("Entre aL FOR "+i);
+		for (int i = 0; i < click; i++) {
 			find(By.xpath(txt_flechaPrev)).click();
 		}
 		mes2 = fechaVuelta.substring(5, 7);
@@ -375,56 +363,56 @@ public class BuscarVuelo_pageObjects extends PageObject {
 			find(By.xpath(txt_dia2)).click();
 			break;
 		case "02":
-			for (int i=0;i<2;i++) {
+			for (int i = 0; i < 2; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia2 += "4" + "]/div[4]/span[" + dia2 + "]";
 			find(By.xpath(txt_dia2)).click();
 			break;
 		case "03":
-			for (int i=0;i<3;i++) {
+			for (int i = 0; i < 3; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia2 += "5" + "]/div[4]/span[" + dia2 + "]";
 			find(By.xpath(txt_dia2)).click();
 			break;
 		case "04":
-			for (int i=0;i<4;i++) {
+			for (int i = 0; i < 4; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia2 += "6" + "]/div[4]/span[" + dia2 + "]";
 			find(By.xpath(txt_dia2)).click();
 			break;
 		case "05":
-			for (int i=0;i<5;i++) {
+			for (int i = 0; i < 5; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia2 += "7" + "]/div[4]/span[" + dia2 + "]";
 			find(By.xpath(txt_dia2)).click();
 			break;
 		case "06":
-			for (int i=0;i<6;i++) {
+			for (int i = 0; i < 6; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia2 += "8" + "]/div[4]/span[" + dia2 + "]";
 			find(By.xpath(txt_dia2)).click();
 			break;
 		case "07":
-			for (int i=0;i<7;i++) {
+			for (int i = 0; i < 7; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia2 += "9" + "]/div[4]/span[" + dia2 + "]";
 			find(By.xpath(txt_dia2)).click();
 			break;
 		case "08":
-			for (int i=0;i<8;i++) {
+			for (int i = 0; i < 8; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia2 += "10" + "]/div[4]/span[" + dia2 + "]";
 			find(By.xpath(txt_dia2)).click();
 			break;
 		case "09":
-			for (int i=0;i<9;i++) {
+			for (int i = 0; i < 9; i++) {
 				find(By.xpath(txt_flecha)).click();
 			}
 			txt_dia2 += "11" + "]/div[4]/span[" + dia2 + "]";
@@ -432,7 +420,8 @@ public class BuscarVuelo_pageObjects extends PageObject {
 			break;
 		}
 	}
-	public void compareMenor (int precioEsperado) {
+
+	public void compareMenor(int precioEsperado) {
 		Assert.assertEquals(precioEsperado, menor);
 	}
 }

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Busqueda de vuelo en Despegar" skipped="0" tests="1" time="64.54" timestamp="2019-11-19T14:50:09.307-05:00[America/Bogota]"><testcase name="ida y vuelta para 4 adultos y 4 niños y validar el precio más barato del vuelo"><failure message="expected:&lt;7596990&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">expected:&lt;7596990&gt; but was:&lt;0&gt;</failure><system-err>expected:&lt;7596990&gt; but was:&lt;0&gt;&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Busqueda de vuelo en Despegar" skipped="0" tests="1" time="58.95" timestamp="2019-11-21T16:01:41.222-05:00[America/Bogota]"><testcase name="ida y vuelta para 4 adultos y 4 niños y validar el precio más barato del vuelo"><failure message="expected:&lt;7596990&gt; but was:&lt;22973514&gt;" type="junit.framework.AssertionFailedError">expected:&lt;7596990&gt; but was:&lt;22973514&gt;</failure><system-err>expected:&lt;7596990&gt; but was:&lt;22973514&gt;&#13;
 junit.framework.Assert.fail(Assert.java:57)&#13;
 junit.framework.Assert.failNotEquals(Assert.java:329)&#13;
 junit.framework.Assert.assertEquals(Assert.java:78)&#13;
 junit.framework.Assert.assertEquals(Assert.java:234)&#13;
 junit.framework.Assert.assertEquals(Assert.java:241)&#13;
-com.carlos.app.Despegar.pageObjects.BuscarVuelo_pageObjects.compareMenor(BuscarVuelo_pageObjects.java:436)&#13;
+com.carlos.app.Despegar.pageObjects.BuscarVuelo_pageObjects.compareMenor(BuscarVuelo_pageObjects.java:426)&#13;
 com.carlos.app.Despegar.steps.BuscarVuelo_steps.validar_precio_mas_bajo(BuscarVuelo_steps.java:39)&#13;
 com.carlos.app.Despegar.definitions.BuscarVuelo_definitions.validar_precio_mas_bajo(BuscarVuelo_definitions.java:25)&#13;
 ✽.Validar precio mas bajo7596990(src/test/resources/features/buscarVuelo.feature:20)&#13;

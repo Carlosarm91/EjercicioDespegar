@@ -7,7 +7,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 
-@CucumberOptions(features="src/test/resources/features/buscarVuelo.feature", glue= {"com.carlos.app.Despegar"},tags= {"@tag2"})
+@CucumberOptions(features="src/test/resources/features/buscarVuelo.feature", glue= {"com.carlos.app.Despegar"},tags= {"@tag3"})
 public class Runner_BuscarVuelo {
 
 }

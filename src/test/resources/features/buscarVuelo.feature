@@ -20,7 +20,7 @@ Feature: Busqueda de vuelo en Despegar
     Then Validar precio mas bajo<precioEsperado>
     Examples: 
       |destino |  fechaIda    |fechaVuelta  |adultos| niños |precioEsperado|
-      | "quito"| "2019-01-30" |"2019-02-13" |  "4"  |  "4"  | 7596990      |
+      | "tokyo"| "2019-01-30" |"2019-02-13" |  "4"  |  "4"  | 7596990      |
       
   @tag3
   Scenario Outline: vuelo para 3 niños 2 adultos sin decidir fecha validar el precio más alto del vuelo
@@ -29,5 +29,5 @@ Feature: Busqueda de vuelo en Despegar
     Then Validar precio mas alto
     Examples: 
       |destino |adultos|niños|
-      | "barcelona" | "3"   |"2"	 |
+      | "londres" | "3"   |"2"	 |
 
